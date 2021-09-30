@@ -1,0 +1,79 @@
+/* cambia el color del fondo del body */
+body {
+    background-color: #ffffff;
+}
+
+/* H1 = Pedidos en Linea */
+h2 {
+    text-align: center;
+    color: white;
+}
+
+/* H4 = Nombre del platillo */
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Organiza el header */
+header {
+    text-align: center;
+}
+
+/*  */
+@media (min-width : 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+/* BotonLink = borrar platillo del carrito */
+.borrar-platilo {
+    background-color: #fbaf32;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color:rgb(71, 71, 71);
+    font-weight: bold;
+
+}
+
+/* Quitar estilo de la lista (quita un punto) */
+ul {
+    list-style: none;
+}
+
+/* H2 = Pedidos en Line */
+.encabezado {
+    margin: 30px 0;
+    color: rgb(0, 0, 0);
+}
+
+/* Ventana Carrito */
+.submenu {
+    position: relative;
+}
+.submenu #carrito{
+    display: none;
+}
+
+/* Diseño de recuadro emergente */
+.submenu:hover #carrito{
+    display: block;
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: #17181b;
+    padding: 20px;
+}
+
+/* diseño boton? */
+.vacio {
+    padding: 10px;
+    background-color: #fbaf32;
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}

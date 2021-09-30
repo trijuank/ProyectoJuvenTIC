@@ -1,0 +1,47 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: 'Bebas Neue',cursive !important;
+    font-size: 20px;
+    background-color: #ffffe0;
+  }
+
+  H1{
+    margin: 20px 20px 20px 0px;
+    font-size: 45px;
+    font-weight: bold ;
+    position: relative;
+  }
+
+  #enviar{
+    background-color:#31AF4C;
+    border-color:#31AF4C;
+  }
+
+  
+  #pagina {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  #contenido{
+    padding-bottom:50px; /* este valor debe ser igual o mayor al alto del pie */
+  }
+  
+  #pie {
+    height:50px;
+    line-height:50px;
+    background:black;
+    color:white;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+  }
+  /*.contenedor {
+    min-height: calc(100vh - 300px);
+  }
+  */
+  
+  

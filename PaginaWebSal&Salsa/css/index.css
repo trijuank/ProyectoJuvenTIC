@@ -1,0 +1,59 @@
+.header{
+    background-image: url(../img/nosotros/foto5@2x.png);
+    background-position: center;
+    background-size: cover;
+}
+.fondo2{
+    background-image: url(../img/nosotros/foto6@2x.png);
+    background-position: center;
+    background-size: cover;
+}
+.img-logo{
+    width: 40px;
+}
+.logo1{
+    width: 400px;
+    
+}
+.Descrip{
+    background-image: url(../img/nosotros/foto7@2x.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+body{
+    font-family: 'Bebas Neue',cursive !important;
+    font-size: 20px;
+    background-color: #ffffe0;
+    text-align: center;
+}
+
+H1{
+    margin: 30px 30px 30px 0px;
+    font-size: 60px;
+    font-weight: bold ;
+    position: relative;
+  }
+
+#recomendados{
+    
+  color:black;
+}
+
+.carousel-item{
+    width: 100%;
+    height:500px;
+    text-align: center;
+}
+
+.card{
+
+    width: 18rem;
+    text-align: center;
+    
+}
+
+.btn{
+    background-color: red;
+    border-color: red;
+}

@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FontAwesome para Icono Redes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/compras.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!--tipo de fuente-->
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+    <title>Menu</title>
+
+  </head>
+
+  <body>
+    
+    <!-- Barra menu -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img class="logotipo" src="img/logo.png" alt="" width="100" height="70" class="d-inline-block align-text-top"> 
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav " >
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link" href="servicios.html">Servicios</a>
+              <a class="nav-link" href="contactenos.html">Contactenos</a>
+            </div>
+          </div>
+
+          <div class="two columns u-pull-right">
+
+            <ul>
+                <li class="submenu">
+                    <img src="img/cart.png" alt="">
+                    <div id="carrito">
+                        <p class="vacio">Carrito vacio</p>
+                        <table class="u-full-width">
+
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Platillo</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="img/menu/menu1@2x.png" width="100">
+                                    </td>
+                                    <td>Nombre platillo</td>
+                                    <td>$15</td>
+                                    <td>1</td>
+                                    <td><a href="#" class="borrar-platillo">X</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <img src="img/menu/menu2@2x.png" width="100">
+                                    </td>
+                                    <td>Nombre platillo</td>
+                                    <td>$15</td>
+                                    <td>1</td>
+                                    <td><a href="#" class="borrar-platillo">X</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="button u-full-width">Vaciar carrito</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+          
+        </div>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <div class="container">
+      <br>
+      <br>
+
+      <!-- Titulo -->
+      <p class="h1"><strong>Animate a probar uno de nuestros platillos</strong></p>
+      <p>Tenemos gran variedad de platillos para todos los gustos</p>
+      
+        <!-- Boton Menu -->
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-danger" type="button">Menu descargable</button>
+      </div>
+      <br>
+    </div>
+
+    <h2 class="encabezado">Pedidos en Linea</h2>
+    <!-- Seccion de menu 1 -->
+    <section id="pagina1">
+      <div  class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="col">
+            <div class="card h-100 bg-danger mb-3">
+              <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$20</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-dark mb-3">
+              <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$15</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-danger mb-3" >
+              <img src="img/menu/menu3@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$40</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          <div class="col">
+            <div class="card h-100 bg-dark mb-3">
+              <img src="img/menu/menu4@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$25</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-danger mb-3">
+              <img src="img/menu/menu5@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$30</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-dark mb-3" >
+              <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$35</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 bg-danger mb-3">
+              <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$20</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-dark mb-3">
+              <img src="img/menu/menu3@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$35</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 bg-danger mb-3" >
+              <img src="img/menu/menu4@2x.png" class="card-img-top" alt="...">
+              <div class="card-body text-light">
+                <h5 class="card-title">Nombre del platillo</h5>
+                <img src="img/estrellas.png" >
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                <p class="precio">$18</p>
+              </div>
+              <div class="card-footer">
+                <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                <img src="img/cart.png" alt="">
+              </div>
+            </div>
+          </div>
+  
+        <br>
+  
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+  
+            <div class="col">
+              <div class="card h-100 bg-dark mb-3">
+                <img src="img/menu/menu5@2x.png" class="card-img-top" alt="...">
+                <div class="card-body text-light">
+                  <h5 class="card-title">Nombre del platillo</h5>
+                  <img src="img/estrellas.png" >
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                  <p class="precio">$40</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                  <img src="img/cart.png" alt="">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card h-100 bg-danger mb-3">
+                <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
+                <div class="card-body text-light">
+                  <h5 class="card-title">Nombre del platillo</h5>
+                  <img src="img/estrellas.png" >
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                  <p class="precio">$15</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                  <img src="img/cart.png" alt="">
+                </div>
+              </div>
+            </div>
+  
+            <div class="col">
+              <div class="card h-100 bg-dark mb-3" >
+                <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
+                <div class="card-body text-light">
+                  <h5 class="card-title">Nombre del platillo</h5>
+                  <img src="img/estrellas.png" >
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
+                  <p class="precio">$20</p>
+                </div>
+                <div class="card-footer">
+                  <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
+                  <img src="img/cart.png" alt="">
+                </div>
+              </div>
+            </div>
+        
+          <br>
+          <br>
+      </div>
+    </section> 
+
+    <!-- Ventanas Modal -->
+    <div id="modal1" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, aliquid optio dolorem repudiandae delectus inventore placeat iste cum veniam minima?</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal2" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quod aspernatur quibusdam! Officia facilis quasi perspiciatis iusto cupiditate ratione repellendus?</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu3@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, unde reiciendis vero eius non enim facere explicabo vitae. Iste, at.</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu4@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ab maxime provident laudantium commodi expedita, libero aperiam eligendi totam quo?</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu5@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae perspiciatis qui numquam tempore voluptatem quo tenetur possimus mollitia! Inventore, odio.</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maiores est perspiciatis placeat veritatis hic molestias cupiditate soluta reprehenderit ratione?</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal7" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eum dolorum aliquid cumque unde quasi repellendus harum maiores illo praesentium.</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal8" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu3@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti temporibus, facilis quod atque alias eaque possimus recusandae numquam cum ex.</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="modal9" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu4@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam optio quo, obcaecati blanditiis amet sunt labore vel rem ad nulla.</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal10" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu5@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam est nemo dicta autem nam, at illum quae. Corrupti, nostrum quas.</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal11" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sequi enim nostrum blanditiis corrupti saepe in debitis neque unde distinctio!</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal12" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nombre del platillo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, saepe? Maxime libero expedita deleniti repellat esse nulla doloremque deserunt! Praesentium!</p>
+          </div>
+          <div class="modal-footer">
+            <h5>¿Tienes preguntas? </h5>
+            <a href="contactenos.html" class="btn btn-danger">¡Contactanos!</a>
+            <!--<button type="button" class="btn btn-danger">¡Contactanos!</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------------------- Paginacion ------------------->
+    <!--
+    <div class="container">
+      <br>
+      <nav>
+        <div class="center-block">
+          <ul class="nav nav-pills">
+            <li class="nav-item disable"><a class="nav-link" href="#">&laquo;</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Pg. 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pg. 2</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">&raquo;</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+    </div>
+    -->
+
+    <!-- Pie de pagina -->
+    <footer class="text-center footer-style">
+      <section id="footer">
+          <div class="container">
+              <div class="row text-center text-xs-center text-sm-left text-md-left">
+                  <div class="col-xs-12 col-sm-4 col-md-4">
+                      <h5>Mapa del sitio</h5>
+                      <ul class="list-unstyled quick-links">
+                          <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+                          <li><a href="nosotros.html"><i class="fa fa-angle-double-right"></i>Nosotros</a></li>
+                          <li><a href="menu.html"><i class="fa fa-angle-double-right"></i>El menu</a></li>
+                          <li><a href="servicios.html"><i class="fa fa-angle-double-right"></i>Servicios</a></li>
+                          <li><a href="contactenos.html"><i class="fa fa-angle-double-right"></i>Contactenos</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4">
+                      <a class="navbar-brand" href="index.html">
+                          <img src="img/logo.png" height=200 widht=150>
+                      </a>
+                      
+                  </div>                            
+                  <div class="col-xs-12 col-sm-4 col-md-4" id="map">
+                      <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d995.6760004602606!2d-76.53439410469426!3d3.422096693224827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1631811377555!5m2!1ses-419!2sus" width="300" height="200" frameborder="0" style="border:0" allowfullscreen loading="lazy"></iframe>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                      <ul class="list-unstyled list-inline social text-center">
+                          <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+                          <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+                          <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+                          <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+                          <li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                      </ul>
+                  </div>
+                  <hr>
+              </div>	
+              <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                      <p>Restaurante Sal y Salsa Ltda. Direccion: Cl. 10 ##37, Cali. Reservas: reservas@salysalsa.com. Tel: 3125672354</p>
+                      <p class="h6">©Copyright 2021.<a class="text-green ml-2" href="https://talento.juventic.co/" target="_blank">Juventic</a></p>
+                  </div>
+                  <hr>
+              </div>	
+          </div>
+      </section>
+    </footer>
+
+    <!-- JavaScript (jQuery first, then Popper.js, then Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
