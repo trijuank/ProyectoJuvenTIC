@@ -3,11 +3,12 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
     <!-- FontAwesome para Icono Redes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -20,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet"> 
 
     <title>Menu</title>
+    <link rel="shortcut icon" href="img/icon/titleLogo.svg">
 
   </head>
 
@@ -45,53 +47,32 @@
             </div>
           </div>
 
-          <div class="two columns u-pull-right">
-
-            <ul>
-                <li class="submenu">
-                    <img src="img/cart.png" alt="">
-                    <div id="carrito">
-                        <p class="vacio">Carrito vacio</p>
-                        <table class="u-full-width">
-
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <img src="img/cart.png" class="nav-link dropdown-toggle img-fluid" height="70px"
+                        width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"></img>
+                    <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                        <table id="lista-carrito" class="table">
                             <thead>
                                 <tr>
                                     <th>Imagen</th>
-                                    <th>Platillo</th>
+                                    <th>Nombre</th>
                                     <th>Precio</th>
-                                    <th>Cantidad</th>
                                 </tr>
                             </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="img/menu/menu1@2x.png" width="100">
-                                    </td>
-                                    <td>Nombre platillo</td>
-                                    <td>$15</td>
-                                    <td>1</td>
-                                    <td><a href="#" class="borrar-platillo">X</a></td>
-                                </tr>
-
-                                <tr>
-                                    <td>
-                                        <img src="img/menu/menu2@2x.png" width="100">
-                                    </td>
-                                    <td>Nombre platillo</td>
-                                    <td>$15</td>
-                                    <td>1</td>
-                                    <td><a href="#" class="borrar-platillo">X</a></td>
-                                </tr>
-                            </tbody>
+                            <tbody></tbody>
                         </table>
-                        <a href="#" class="button u-full-width">Vaciar carrito</a>
+
+                        <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                        <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
                     </div>
                 </li>
             </ul>
+        </div> 
         </div>
-          
-        </div>
+        
       </nav>
     </header>
 
@@ -114,208 +95,220 @@
     <h2 class="encabezado">Pedidos en Linea</h2>
     <!-- Seccion de menu 1 -->
     <section id="pagina1">
-      <div  class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div  class="container" id="lista-productos">
+        <div class="row row-cols-1 row-cols-md-3 ">
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-danger mb-3">
               <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$20</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">20</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-dark mb-3">
               <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$15</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">10</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-danger mb-3" >
               <img src="img/menu/menu3@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$40</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">30</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
         <br>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 ">
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-dark mb-3">
               <img src="img/menu/menu4@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$25</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">40</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-danger mb-3">
               <img src="img/menu/menu5@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$30</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">25</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-dark mb-3" >
               <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$35</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">60</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
         <br>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-3">
+          <div class="col margen">
             <div class="card h-100 bg-danger mb-3">
               <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$20</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">70</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-dark mb-3">
               <img src="img/menu/menu3@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$35</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">30</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
 
-          <div class="col">
+          <div class="col margen">
             <div class="card h-100 bg-danger mb-3" >
               <img src="img/menu/menu4@2x.png" class="card-img-top" alt="...">
               <div class="card-body text-light">
                 <h5 class="card-title">Nombre del platillo</h5>
                 <img src="img/estrellas.png" >
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                <p class="precio">$18</p>
+                <p class="card-text">Precio:</p>
+                <p class="precio">35</p>
               </div>
               <div class="card-footer">
                 <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                <img src="img/cart.png" alt="">
+                <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9"><img src="img/cart.png" alt="" /></a>
               </div>
             </div>
           </div>
   
         <br>
   
-          <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="row row-cols-1 row-cols-md-3">
   
-            <div class="col">
+            <div class="col margen">
               <div class="card h-100 bg-dark mb-3">
                 <img src="img/menu/menu5@2x.png" class="card-img-top" alt="...">
                 <div class="card-body text-light">
                   <h5 class="card-title">Nombre del platillo</h5>
                   <img src="img/estrellas.png" >
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                  <p class="precio">$40</p>
+                  <p class="card-text">Precio:</p>
+                <p class="precio">40</p>
                 </div>
                 <div class="card-footer">
                   <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                  <img src="img/cart.png" alt="">
+                  <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10"><img src="img/cart.png" alt="" /></a>
                 </div>
               </div>
             </div>
   
-            <div class="col">
+            <div class="col margen">
               <div class="card h-100 bg-danger mb-3">
                 <img src="img/menu/menu1@2x.png" class="card-img-top" alt="...">
                 <div class="card-body text-light">
                   <h5 class="card-title">Nombre del platillo</h5>
                   <img src="img/estrellas.png" >
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                  <p class="precio">$15</p>
+                  <p class="card-text">Precio:</p>
+                <p class="precio">45</p>
                 </div>
                 <div class="card-footer">
                   <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                  <img src="img/cart.png" alt="">
+                  <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11"><img src="img/cart.png" alt="" /></a>
                 </div>
               </div>
             </div>
   
-            <div class="col">
+            <div class="col margen">
               <div class="card h-100 bg-dark mb-3" >
                 <img src="img/menu/menu2@2x.png" class="card-img-top" alt="...">
                 <div class="card-body text-light">
                   <h5 class="card-title">Nombre del platillo</h5>
                   <img src="img/estrellas.png" >
                   <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, inventore!</p>
-                  <p class="precio">$20</p>
+                  <p class="card-text">Precio:</p>
+                <p class="precio">50</p>
                 </div>
                 <div class="card-footer">
                   <a href="#modal1" role="button" class="btn btn-large btn-link text-light" data-toggle="modal">Nombre del platillo</a>
-                  <img src="img/cart.png" alt="">
+                  <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12"><img src="img/cart.png" alt="" /></a>
                 </div>
               </div>
             </div>
@@ -638,8 +631,9 @@
     </footer>
 
     <!-- JavaScript (jQuery first, then Popper.js, then Bootstrap JS) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
   </body>
 </html>

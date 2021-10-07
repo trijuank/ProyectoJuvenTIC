@@ -71,3 +71,10 @@ H1{
     width: 30px;
     margin: 5px;
 }*/
+.margen{
+    margin-bottom: 100px !important;
+}
+
+#cargando{
+    display:none;
+}

@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/icon/titleLogo.svg">
     
     <!--Link bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
     <!--Link tipo de fuente-->
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -19,8 +19,7 @@
 
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
    
   </head>
   <body>
@@ -28,42 +27,45 @@
     <header class="header">
   
           <!--Navbar-->
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logotipo" src="img/logo.png" alt="" width="100" height="70" class="d-inline-block align-text-top"> 
+                  <img class="logotipo" src="img/logo.png" alt="" width="100" height="70" class="d-inline-block align-text-top"> 
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav " >
-                  <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                  <a class="nav-link" href="menu.html">EL MENU</a>
-                  <a class="nav-link "href="servicios.html">SERVICIOS</a>
-                  <a class="nav-link" href="contactenos.html">CONTACTENOS</a>
+        
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav " >
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="menu.html">Menu</a>
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                    <a class="nav-link" href="contactenos.html">Contactenos</a>
+                  </div>
                 </div>
+        
+            
               </div>
+              
+            </nav>
+        <br>
+        <section>
+          <!--Description-->
+          <div class="h-100 align-items-center justify-content-center">
+            <div class= "text-white center-align">
+                <!--Logo-->
+                  <img 
+                  src="img/nosotros/logo@2x.png" 
+                  alt="Logo Sal y Sal" 
+                  class="logo1"
+                  />
+                    <h1>
+                      Sabores que exaltan tus sentidos
+                    </h1>
             </div>
-          </nav>
-      
-          
-            <section>
-              <!--Description-->
-              <div class="h-100 align-items-center justify-content-center">
-                <div class= "text-white center-align">
-                    <!--Logo-->
-                      <img 
-                      src="img/nosotros/logo@2x.png" 
-                      alt="Logo Sal y Sal" 
-                      class="logo1"
-                      />
-                        <h1>
-                          Sabores que exaltan tus sentidos
-                        </h1>
-                </div>
-              </div>
-          </section>
+          </div>
+      </section>
     </header>
 
         <div class="fondo2">
@@ -275,11 +277,11 @@
             </div>
         </section>
     </footer> 
-    <!--materialize .js-->
     
-
-
-
+    <!-- JavaScript (jQuery first, then Popper.js, then Bootstrap JS) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
   </body>
-  
 </html>
